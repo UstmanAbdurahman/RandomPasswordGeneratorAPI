@@ -16,7 +16,7 @@ function makeid(length, characterSet) {
 }
 
 const app = express();
-var NODESESSID = makeid(20,'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#%^')
+var NODESESSID = makeid(20,'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
 
 // parse requests of content-type: application/json
 app.use(bodyParser.json());
