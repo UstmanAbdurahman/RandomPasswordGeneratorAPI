@@ -23,12 +23,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res)=>{ 
+app.get('/documentation', (req, res)=>{ 
     res.sendFile(path.join(__dirname + '/index.html'));
     }); 
 
 // simple route
-app.get("/api/randpass", (req, res) => {
+app.get("/", (req, res) => {
     var length = req.query.length
     var charset = req.query.charset
     var password = makeid(length, charset);
