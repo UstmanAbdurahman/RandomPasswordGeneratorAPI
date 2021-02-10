@@ -18,11 +18,11 @@ const app = express();
 // parse requests of content-type: application/json
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res)=>{ 
-    res.sendFile(path.join(__dirname + '/index.html'));
-    }); 
+//app.get('/', (req, res)=>{ 
+//    res.sendFile(path.join(__dirname + '/index.html'));
+//    }); 
 
 // simple route
 app.get("/api/randpass", (req, res) => {
