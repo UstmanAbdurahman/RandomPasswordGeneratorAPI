@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const port = process.env.PORT || 3000;
 var path = require('path');
 
 
@@ -38,6 +39,6 @@ app.get("/api/randpass", (req, res) => {
 });
 
 // set port, listen for requests
-app.listen(3000, () => {
-    console.log("Server is running on port 3000.");
+app.listen(port, function() {
+    console.log("App is running on port " + port);
 });
