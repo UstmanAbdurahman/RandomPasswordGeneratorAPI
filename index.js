@@ -39,10 +39,9 @@ app.get("/api/randpass", (req, res) => {
             password: password 
         }
     ]);
-    console.log(password);
 });
 
 // set port, listen for requests
 app.listen(port, function() {
-    console.log("App is running on port " + port);
+    console.log("App is running on http://127.0.0.1:" + port);
 });

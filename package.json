@@ -4,6 +4,8 @@
   "description": "this api generates random passwords ",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "installdeps": "npm install express body-parser cookie-parser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
