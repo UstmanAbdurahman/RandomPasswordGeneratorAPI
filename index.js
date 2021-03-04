@@ -45,6 +45,10 @@ app.get("/api/randpass", (req, res) => {
     ]);
 });
 
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + '/code404http.html')
+})
+
 // set port, listen for requests
 app.listen(port, function() {
     console.log("App is running on http://127.0.0.1:" + port);
