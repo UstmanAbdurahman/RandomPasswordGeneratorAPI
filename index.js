@@ -25,7 +25,11 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res)=>{
     res.cookie('NODESESSID', NODESESSID);
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'), function(err){
+        if(err){
+            res.sendFile(path.join(__dirname + '/code500http.html'))
+        }
+    });
     }); 
 
 // simple route
