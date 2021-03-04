@@ -46,7 +46,7 @@ app.get("/api/randpass", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + '/code404http.html')
+    res.sendFile(path.join(__dirname + '/code404http.html'));
 })
 
 // set port, listen for requests
