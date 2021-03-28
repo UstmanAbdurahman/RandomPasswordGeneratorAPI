@@ -40,7 +40,7 @@ app.get("/api/randpass", (req, res) => {
     var password = makeid(length, charset);
     res.json([
         {
-            password: password 
+            randomString: password 
         }
     ]);
 });
